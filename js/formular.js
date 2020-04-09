@@ -1,7 +1,11 @@
 
-var rectangle = (x , y) => x + y;
+var rectangle = (x , y) => {
+   return x + y;
+}
 
-var triangle = (b, h) => (0.5 * b) + h;
+var triangle = (b, h) => {
+    return (0.5 * b) * h;
+}
 
 module.exports = {
     rectangle,
