@@ -1,8 +1,19 @@
 //exmaple of file based module
 const formular = require('./formular');
 
-const rec = formular.rectangle(4,6);
+const sqrs = formular.sqr(1, 2, (err, sum )=>{
+    if(err)
+    {
+        //message property available from ERROR object
+        console.log(err.message);
+    }
+    else{
+        console.log(`Result: ${sum}`);
+    }
 
+});
+
+const rec = formular.rectangle(4,6);
 
 var tri = formular.triangle(12, 5);
 
